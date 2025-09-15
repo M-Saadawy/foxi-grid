@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxi Grid - More Examples</title>
+    <link rel="stylesheet" href="../dist/foxi-grid.css">
+    <style>
+        .demo-box {
+            background-color: #e9ecef;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+        }
+        .demo-title {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Foxi Grid System - Additional Examples</h1>
+
+        <!-- Nested Grid with Responsive Classes -->
+        <section class="demo-section">
+            <h2 class="demo-title">Complex Nested Grid</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="demo-box">
+                        <div class="row">
+                            <div class="col-6 col-lg-4">
+                                <div class="demo-box">Nested 1</div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="demo-box">Nested 2</div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="demo-box">Nested 3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-box h-100">Sidebar</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auto-layout with Mixed Content -->
+        <section class="demo-section">
+            <h2 class="demo-title">Mixed Auto Layout</h2>
+            <div class="row">
+                <div class="col">Auto</div>
+                <div class="col-6">Fixed Width</div>
+                <div class="col">Auto</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md">First auto</div>
+                <div class="col-12 col-md-6">Fixed center</div>
+                <div class="col-12 col-md">Last auto</div>
+            </div>
+        </section>
+
+        <!-- Advanced Flexbox Usage -->
+        <section class="demo-section">
+            <h2 class="demo-title">Advanced Flexbox</h2>
+            <!-- Flex Direction with Alignment -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                <div class="demo-box">Item 1</div>
+                <div class="demo-box">Item 2</div>
+                <div class="demo-box">Item 3</div>
+            </div>
+
+            <!-- Nested Flex Containers -->
+            <div class="d-flex justify-content-between mb-4">
+                <div class="d-flex flex-column">
+                    <div class="demo-box mb-2">Nested 1.1</div>
+                    <div class="demo-box">Nested 1.2</div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="demo-box">Nested 2</div>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                    <div class="demo-box mb-2">Nested 3.1</div>
+                    <div class="demo-box">Nested 3.2</div>
+                </div>
+            </div>
+
+            <!-- Responsive Flex Wrapping -->
+            <div class="d-flex flex-wrap justify-content-around">
+                <div class="demo-box m-2" style="width: 150px;">Wrap 1</div>
+                <div class="demo-box m-2" style="width: 150px;">Wrap 2</div>
+                <div class="demo-box m-2" style="width: 150px;">Wrap 3</div>
+                <div class="demo-box m-2" style="width: 150px;">Wrap 4</div>
+            </div>
+        </section>
+
+        <!-- Complex Responsive Layout -->
+        <section class="demo-section">
+            <h2 class="demo-title">Complex Responsive Layout</h2>
+            <div class="row">
+                <!-- Header -->
+                <div class="col-12 mb-4">
+                    <div class="demo-box">Header</div>
+                </div>
+                
+                <!-- Main Content Area -->
+                <div class="col-12 col-lg-8 order-2 order-lg-1">
+                    <div class="row">
+                        <!-- Article Cards -->
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="demo-box h-100">
+                                <h3>Article 1</h3>
+                                <p>Content goes here...</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="demo-box h-100">
+                                <h3>Article 2</h3>
+                                <p>Content goes here...</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="demo-box">
+                                <h3>Featured Article</h3>
+                                <p>Full width content...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-12 col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
+                    <div class="demo-box sticky-top">
+                        <h3>Sidebar</h3>
+                        <p>Sticky sidebar content...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Spacing Examples -->
+        <section class="demo-section">
+            <h2 class="demo-title">Advanced Spacing</h2>
+            <!-- Responsive Spacing -->
+            <div class="p-2 p-md-3 p-lg-4 mb-3 demo-box">
+                <div class="mx-auto" style="max-width: 300px;">
+                    <div class="p-2">Responsive Padding Container</div>
+                </div>
+            </div>
+
+            <!-- Mixed Spacing -->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="demo-box h-100 p-2 p-md-3">
+                        Left Content
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo-box h-100 p-2 p-md-3">
+                        Right Content
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Grid Order -->
+        <section class="demo-section">
+            <h2 class="demo-title">Advanced Grid Order</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 order-3 order-md-1">
+                    <div class="demo-box">First on desktop, Last on mobile</div>
+                </div>
+                <div class="col-12 col-md-4 order-1 order-md-2">
+                    <div class="demo-box">Second on desktop, First on mobile</div>
+                </div>
+                <div class="col-12 col-md-4 order-2 order-md-3">
+                    <div class="demo-box">Third on desktop, Second on mobile</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Display Utilities Showcase -->
+        <section class="demo-section">
+            <h2 class="demo-title">Display Utilities Showcase</h2>
+            <div class="demo-box mb-3 d-none d-md-block">
+                Visible only on medium and larger screens
+            </div>
+            <div class="demo-box mb-3 d-block d-md-none">
+                Visible only on small screens
+            </div>
+            <div class="demo-box mb-3 d-none d-sm-block d-md-none">
+                Visible only on small screens (between sm and md breakpoints)
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="demo-box mb-2 mb-md-0">Responsive Flex Item 1</div>
+                <div class="demo-box mb-2 mb-md-0">Responsive Flex Item 2</div>
+                <div class="demo-box">Responsive Flex Item 3</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
