@@ -1,19 +1,63 @@
 # Foxi Grid System
 
-A highly customizable SASS grid system with responsive features and utility classes.
+A highly customizable SASS grid system with responsive features and utility classes. Simple to use, lightweight, and framework-agnostic.
 
 ## Installation
 
+Choose the installation method that works best for you:
+
+### Package Managers
+
 ```bash
+# NPM
 npm install foxi-grid
+
+# Yarn
+yarn add foxi-grid
+
+# PNPM
+pnpm add foxi-grid
 ```
+
+### CDN
+
+Add the compiled CSS directly to your HTML:
+
+```html
+<!-- Development version -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foxi-grid@latest/dist/foxi-grid.css">
+
+<!-- Production version (minified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foxi-grid@latest/dist/foxi-grid.min.css">
+```
+
+### Direct Download
+
+1. Download the latest release from the [releases page](https://github.com/M-Saadawy/foxi-grid/releases)
+2. Extract the files
+3. Include either `dist/foxi-grid.css` or `dist/foxi-grid.min.css` in your project
 
 ## Usage
 
-Import the grid system in your SASS file:
+### With Package Managers
+
+Import in your SASS file:
 
 ```scss
+// If installed via package manager
 @import "foxi-grid/src/foxi-grid";
+
+// Or import individual parts
+@import "foxi-grid/src/core/grid";
+@import "foxi-grid/src/utilities/flex";
+```
+
+### With CDN or Direct Download
+
+Include the CSS file in your HTML:
+
+```html
+<link rel="stylesheet" href="path/to/foxi-grid.min.css">
 ```
 
 ## Features
