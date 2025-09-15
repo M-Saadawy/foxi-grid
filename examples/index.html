@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxi Grid System - Basic Examples</title>
+    <link rel="stylesheet" href="../dist/foxi-grid.css">
+    <style>
+        .demo-box {
+            background-color: #e9ecef;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+        }
+        .demo-title {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Foxi Grid System Examples</h1>
+
+        <!-- Basic Grid -->
+        <section class="demo-section">
+            <h2 class="demo-title">Basic Grid</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="demo-box">Col-12 Col-md-6 Col-lg-4</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="demo-box">Col-12 Col-md-6 Col-lg-4</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="demo-box">Col-12 Col-md-12 Col-lg-4</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auto Layout -->
+        <section class="demo-section">
+            <h2 class="demo-title">Auto Layout</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="demo-box">Auto Column</div>
+                </div>
+                <div class="col">
+                    <div class="demo-box">Auto Column</div>
+                </div>
+                <div class="col">
+                    <div class="demo-box">Auto Column</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Column Offset -->
+        <section class="demo-section">
+            <h2 class="demo-title">Column Offset</h2>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="demo-box">Centered Column</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3">
+                    <div class="demo-box">Offset 3</div>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <div class="demo-box">Offset 1</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flexbox Utilities -->
+        <section class="demo-section">
+            <h2 class="demo-title">Flexbox Utilities</h2>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="demo-box" style="width: 100px;">Item 1</div>
+                <div class="demo-box" style="width: 100px;">Item 2</div>
+                <div class="demo-box" style="width: 100px;">Item 3</div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center" style="height: 150px; background-color: #f8f9fa;">
+                <div class="demo-box">Centered Item</div>
+            </div>
+        </section>
+
+        <!-- Spacing Utilities -->
+        <section class="demo-section">
+            <h2 class="demo-title">Spacing Utilities</h2>
+            <div class="demo-box mb-3">Margin Bottom 3</div>
+            <div class="demo-box mx-auto" style="width: 200px;">Horizontally Centered</div>
+            <div class="demo-box mt-3 p-4">Margin Top 3, Padding 4</div>
+        </section>
+
+        <!-- Display Utilities -->
+        <section class="demo-section">
+            <h2 class="demo-title">Display Utilities</h2>
+            <div class="demo-box d-none d-md-block">Hidden on mobile, visible on medium and up</div>
+            <div class="demo-box d-block d-md-none">Visible on mobile, hidden on medium and up</div>
+        </section>
+    </div>
+</body>
+</html>

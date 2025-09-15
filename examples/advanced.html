@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxi Grid System - Advanced Examples</title>
+    <link rel="stylesheet" href="../dist/foxi-grid.css">
+    <style>
+        .demo-box {
+            background-color: #e9ecef;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+        }
+        .demo-title {
+            margin-bottom: 1.5rem;
+        }
+        .demo-card {
+            background-color: white;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Advanced Grid Examples</h1>
+
+        <!-- Nested Grids -->
+        <section class="demo-section">
+            <h2 class="demo-title">Nested Grids</h2>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="demo-box">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="demo-card">Nested Col-6</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="demo-card">Nested Col-6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="demo-box">Col-md-3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complex Layout -->
+        <section class="demo-section">
+            <h2 class="demo-title">Complex Layout</h2>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="demo-box">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="demo-card mb-3">Main Content 1</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="demo-card mb-3">Main Content 2</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="demo-card">Full Width Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="demo-box">
+                        <div class="demo-card mb-3">Sidebar Item 1</div>
+                        <div class="demo-card">Sidebar Item 2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Order -->
+        <section class="demo-section">
+            <h2 class="demo-title">Responsive Order</h2>
+            <div class="row">
+                <div class="col-md-4 order-md-2">
+                    <div class="demo-box">First on mobile, Second on desktop</div>
+                </div>
+                <div class="col-md-4 order-md-1">
+                    <div class="demo-box">Second on mobile, First on desktop</div>
+                </div>
+                <div class="col-md-4 order-md-3">
+                    <div class="demo-box">Third on all screens</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Flexbox -->
+        <section class="demo-section">
+            <h2 class="demo-title">Advanced Flexbox</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" style="min-height: 200px; background-color: #f8f9fa; padding: 1rem;">
+                <div class="demo-card mb-3 mb-md-0">Item 1</div>
+                <div class="demo-card mb-3 mb-md-0 align-self-start">Item 2</div>
+                <div class="demo-card align-self-end">Item 3</div>
+            </div>
+        </section>
+
+        <!-- Grid with Gutters -->
+        <section class="demo-section">
+            <h2 class="demo-title">Grid with Different Gutters</h2>
+            <div class="row g-2">
+                <div class="col-6">
+                    <div class="demo-box">Small Gutter</div>
+                </div>
+                <div class="col-6">
+                    <div class="demo-box">Small Gutter</div>
+                </div>
+            </div>
+            <div class="row g-4 mt-3">
+                <div class="col-6">
+                    <div class="demo-box">Large Gutter</div>
+                </div>
+                <div class="col-6">
+                    <div class="demo-box">Large Gutter</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

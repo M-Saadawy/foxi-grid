@@ -1,0 +1,54 @@
+// Core Grid Classes
+// ---------------
+
+// Container
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.container-fluid {
+  @include make-container();
+}
+
+// Row
+.row {
+  @include make-row();
+}
+
+// Columns
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: if($breakpoint == xs, "", "-#{$breakpoint}");
+
+  @include media-breakpoint-up($breakpoint) {
+    // Basic columns
+    @for $i from 1 through $grid-columns {
+      .col#{$infix}-#{$i} {
+        @include make-col-ready();
+        @include make-col($i);
+      }
+    }
+
+    // Offset columns
+    @for $i from 0 through ($grid-columns - 1) {
+      @if $i > 0 {
+        .offset#{$infix}-#{$i} {
+          @include make-col-offset($i);
+        }
+      }
+    }
+  }
+}
+
+// Auto columns
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}

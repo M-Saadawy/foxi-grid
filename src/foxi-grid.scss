@@ -1,0 +1,17 @@
+/*!
+ * Foxi Grid System v1.0.0
+ * A highly customizable SASS grid system
+ * Copyright 2025 M-Saadawy
+ */
+
+// Import variables
+@import "variables";
+
+// Import core functionality
+@import "core/mixins";
+@import "core/grid";
+
+// Import utilities
+@import "utilities/spacing";
+@import "utilities/flex";
+@import "utilities/display";
